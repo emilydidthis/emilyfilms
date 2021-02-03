@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Emily Zhao</title>
+        <link href="../css/main.css" rel=stylesheet>
+        <link rel="icon" type="image/ico" href="../favicon.ico">
+        <style>
+            p {
+                font-family: Roboto;
+                font-weight: 300;
+            }
+            h2{
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            h3 {
+                font-family: Roboto;
+                font-weight: 300;
+                margin-top: -5px;
+                margin-bottom: 30px;
+            }
+
+            #donateButton {
+              font-family: Roboto;
+              color: #ffffff;
+              font-size: 1em;
+              background: #E02B3E;
+              padding: 10px 20px 10px 20px;
+              text-decoration: none;
+              transition: .5s;
+              margin-bottom: 30px;
+            }
+
+            #donateButton:hover {
+              background: #1E478D;
+              transition: .5s;
+              text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <h1>EMILY'S THESIS FILM</h1>
+            <div style="border-top: 1px solid black"><br></div>
+            <div id="donate">
+            <h2>$10,915</h2>
+            <h3>raised of $15,000 goal</h3>
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+            ">
+            <input type="submit" name="submit" value="Click to Donate" id="donateButton">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            </div>
+
+            <img id="family" src="family-2.jpg" width=100%>
+            <p>Hi, my name is Emily Zhao, and I am the daughter of the ever-growing Yuemei Ding. Thanks to my mother’s neverending hard work, I am able to attend my dream school and pursue my dream major: filmmaking. For my final semester, I will be making a thesis film that will be the culmination of my education at New York University. It’s an ambitious project, and I would appreciate all the support I can get.</p>
+            <p>Thesis films are very important in kickstarting an artist’s career. I’ve already done all that I can from a creative standpoint to promise an impressive and successful final product: I’ve spent years perfecting the script and I’ve gathered all the best talent I can find. The last step is to finance it, and films are expensive to make. Your support will not only make this dream of mine possible, but future ones possible as well.</p>
+            <p>I’m proud of my mom and am always amazed by the force and determination that drives the WFG culture. I always look forward to attending meetings and conferences because I love seeing and capturing everyone’s latest successes with photos and video. WFG is definitely one of my greatest sources of motivation, and I’m excited that John Shin is already working to adapt Think and Grow Rich into a film. I believe I can contribute in the same way after I graduate, and this film will be my first stepping stone to make something that reflects how inspired I am by people like you and my parents. With your support and care, I believe I will be the younger version of 李安, also an NYU graduate. </p>
+            <p>Thank you.</p>
+            <p>–Emily Zhao</p>
+        </div>
+
+        <script src="jquery/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.2.0/typeit.min.js"></script>
+        <script src="js/typewriter.js"></script>
+        <script>
+
+         </script>
+    </body>
+</html>

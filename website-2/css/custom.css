@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:700|EB+Garamond|Roboto|Lato');
+
+@font-face {
+    font-family:"Helvetica Neue Light";
+    src: url("../fonts/Helvetica Neue CE 35 Thin.ttf");
+}
+
+/* -------- Layout -------- */
+
+.wrapper{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+}
+
+
+.portfolio {
+    padding-top: 0px;
+    /*position: relative;
+    top: -50px;*/
+}
+
+/* -------- Site Title -------- */
+
+.myname {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 4em;
+    padding: 0px;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* -------- Nav -------- */
+
+ul {
+    list-style: none;
+    display: block;
+    padding-left: 2px;
+    margin: 0px;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+li:before{
+    padding-right: 10px; /* space to the right of squares */
+}
+
+li.nav-1:before {content: "◼"; color: #EE585E; /* salmon */}
+li.nav-2:before {content: "◼"; color: #F5A08F; /* pink */}
+li.nav-3:before {content: "◼"; color: #B2D3D2; /* grey-blue */}
+li.nav-4:before {content: "◼"; color: #1AAAB2; /* teal */}
+li.nav-5:before {content: "◼"; color: #165260; /* navy */}
+
+li.nav-1:hover:before {content: "▣"; color: #EE585E; /* salmon */}
+li.nav-2:hover:before {content: "▣"; color: #F5A08F; /* pink */}
+li.nav-3:hover:before {content: "▣"; color: #B2D3D2; /* grey-blue */}
+li.nav-4:hover:before {content: "▣"; color: #1AAAB2; /* teal */}
+li.nav-5:hover:before {content: "▣"; color: #165260; /* navy */}
+
+@media only screen and (min-width: 768px) {
+    .myname {
+        font-size: 4.5em;
+    }
+    ul{
+        padding-left: 0px;
+    }
+
+    nav{
+        width: 165px;
+        float: left;
+    }
+
+    .content{
+        margin-top: 45px;
+    }
+    .portfolio {
+        padding-left: 165px;
+        margin-right: auto;
+    }
+
+    .project {
+        width: auto;
+        margin-left: 165px;
+    }
+}
+
+/* -------- Hamburger Nav -------- */
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 1px;
+    position: relative;
+    bottom: 61px;
+}
+
+#navbar{
+    padding-bottom: 25px;
+    padding-left: 0px;
+}
+
+/* -------- Posts -------- */
+
+h2 {
+    font-size: 1.6em;
+    margin-top: 10px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.film-post:before {content: ""; display: block; border-bottom: 5px solid #EE585E; /* salmon */}
+
+.animation-post:before {content: ""; display: block; border-bottom: 5px solid #F5A08F; /* pink */}
+
+.design-post:before {content: ""; display: block; border-bottom: 5px solid #B2D3D2; /* grey-blue */}
+
+.prints-post:before {content: ""; display: block; border-bottom: 5px solid #1AAAB2; /* teal */}
+
+.illustration-post:before {content: ""; display: block; border-bottom: 5px solid #165260; /* navy */}
+
+.row [class*='col-'] {
+ /*background-color: #F5F5F5;*/
+ background-clip: content-box;
+ min-height: 120px;
+ margin-bottom: 30px;
+}
+
+.tall {
+ height: 160px;
+}
+.taller {
+ height: 200px;
+}
+
+/* -------- Projects -------- */
+
+.project {
+    border-top: 5px solid;
+    padding-top: 20px;
+}
+
+.film-project{border-color: #EE585E; /* salmon */}
+.animation-project{border-color: #F5A08F; /* pink */}
+.design-project{border-color: #B2D3D2; /* grey-blue */}
+.prints-project{border-color: #1AAAB2; /* teal */}
+.illustration-project{border-color: #165260; /* navy */}
+
+
+.vimeo, video, .project-photo, .carousel {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.project-photo, .carousel{
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    margin-top: 0px;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+@media only screen and (min-width: 1140px) {
+    .vimeo {
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #film-copy{
+        width: 475px;
+        padding-right: 10px;
+    }
+
+    #mgfx {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .project-photo, .carousel{
+        float: left;
+        width: 35%;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    .project-photo-horizontal{
+        width: 60%;
+    }
+
+    .project-title {
+        font-size: 2em;
+    }
+
+    .copy {
+        font-size: 1.2em;
+    }
+
+    .subtitle {
+        margin-bottom: 50px;
+        /*font-style: italic;*/
+    }
+}
+
+.attributions {
+    display: flex;
+    align-self: flex-end;
+    color: #AAA;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    text-shadow: none;
+    color: #333;
+    position: static;
+    font-size: 20px;
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: static;
+  top: 0%;
+  right: 0%;
+  z-index: 5;
+  display: inline;
+  margin: 0px;
+}
+
+@media screen and (min-width: 0px){
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+}
+
+.carousel-inner > .item > img {
+    min-width: 100%;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: #DDD;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #AAA;
+}
+
+/* -------- Links -------- */
+
+@media only screen and (min-width: 768px) {
+    .preview {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        transition: 2s;
+    }
+
+    .preview:hover{
+        filter: none;
+        transition: 2s;
+    }
+}
+a, a:visited {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+.film:active{color: #EE585E; /* salmon */}}
+.animation:active{color: #F5A08F; /* pink */}
+.design:active{color: #B2D3D2; /* grey-blue */}
+.prints:active{color: #1AAAB2; /* teal */}
+.illustration:active{color: #165260; /* navy */}

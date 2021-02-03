@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Film</title>
+        <!-- Bootstrap CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+    </head>
+
+    <body>
+        <div class="wrapper container-fluid">
+            <h1 class="myname"><a href="index.html">emily zhao</a></h1>
+            <div class="content">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul>
+                            <li class="nav-1"><a href="film.html">FILM</a></li>
+                            <li class="nav-2"><a href="animation.html">ANIMATION</a></li>
+                            <li class="nav-3"><a href="design.html">DESIGN</a></li>
+                            <li class="nav-4"><a href="prints.html">PRINTS</a></li>
+                            <li class="nav-5"><a href="illustration.html">ILLUSTRATION</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <div class="portfolio">
+                    <div class="row">
+                        <div class="post col-xs-6 col-lg-4 film-post">
+                            <h2><a class="film" href="projects/textpectations.html">Textpectations Preview</a></h1>
+                            <a href="projects/textpectations.html"><img class="preview" src="images/thumbnails/textpectations.png" width=100% alt="Textpectations film still"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- jQuery (must precede JavaScript) -->
+            <script src="jquery/jquery-3.2.1.min.js"></script>
+            <!-- Bootstrap JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/masonry.pkgd.min.js"></script>
+            <script js>
+                $('.row').masonry({
+                    itemSelector : '.col-xs-6'
+                });
+            </script>
+        </div>
+    </body>
+</html>
